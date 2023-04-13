@@ -1,17 +1,17 @@
 import pandas as pd
 
 
-def get_students_df() -> pd.DataFrame:
+def get_students_df(path) -> pd.DataFrame:
     df = pd.read_excel(
-        "../data/Sample.xlsx",
+        path,
         engine="openpyxl"
     )
     return df
 
 
-def get_df_table_html() -> str:
-    df = get_students_df()
-    html = df.to_html(classes="table")
+def get_df_table_html(df) -> str:
+    # df = get_students_df(path)
+    html = df.to_html(classes="table table-striped-columns")
     return html
 
 
