@@ -8,7 +8,7 @@ app = Flask(__name__)
 def index():
     df = pXL.parserExcel.get_students_df("data/Sample.xlsx")
     table = pXL.parserExcel.get_df_table_html(df)
-    return render_template("index.html", table=table)
+    return render_template("index.html", table=table, col_vals=df.columns.values.tolist())
 
 
 if __name__ == '__main__':
