@@ -10,15 +10,28 @@
     <title>Информация о студентах</title>
 </head>
 <body>
-    <form>
-        <div class="input-group my-1" id="sorting">
-            {% for col in col_vals %}
-             <input type="text" class="form-control" placeholder="{{ col }}" onchange="disableOtherButtons(this)">
-            {% endfor %}
-            <button type="submit" class="btn btn-primary">Отправить</button>
+    <form method="post">
+        <div class="d-flex justify-content-between" style="width: 100%" id="sorting">
+                <div class="d-flex align-items-center justify-content-between" style="font-size: 20px;width: 650px;height: 50px;">
+                    <p style="margin-bottom: 8px">Фильтр</p>
+                    <select name="col" id="col" class="form-select" style="width:150px" aria-label="Пример выбора по умолчанию">
+                        {% for col in col_vals[1:] %}
+                            <option value="{{ col }}">{{ col }}</option>
+                        {% endfor %}
+                    </select>
+
+                    <p style="margin-bottom: 8px">по</p>
+                    <input required type="text" name="keyword" id="keyword" style="width:150px" class="form-control" placeholder="ключевое слово">
+                    <button style="margin-left: 2px;" type="submit" class="btn btn-primary">Отправить</button>
+                    <a href="/"><button style="margin-left: 2px;" type="button" class="btn btn-secondary">Отменить</button></a>
+                </div>
+            <div class="d-flex align-items-center btn-group" role="group" aria-label="Простой пример">
+              <a href="/test1" class="btn btn-primary">Тест1</a>
+              <a href="/test2" class="btn btn-primary">Тест2</a>
+              <a href="/test3" class="btn btn-primary">Тест3</a>
+            </div>
         </div>
     </form>
 {{ table|safe }}
-    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 </html>
