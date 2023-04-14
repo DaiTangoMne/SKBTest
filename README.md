@@ -23,3 +23,7 @@
     Установка зависимостей: <i>pip install -r requirements.txt</i><br>
     Запускаемый файл: <i>app.py</i>
 </p>
+<h2>Тесты</h2>
+<img src="https://sun9-5.userapi.com/impg/4aIMfrVWDkajbdvnkwdcr8Yj8WGEEp0CulwyKg/cLUfLt9W7Xk.jpg?size=1834x900&quality=96&sign=a116f46e031f5afe3b9f76ba0286b6c7&type=album">
+<img src="https://sun9-55.userapi.com/impg/DQ62qrR8fgZuKzeq9LvMOGtBeuYL1xV11BaEsA/xkCjGlhhYGQ.jpg?size=1834x902&quality=96&sign=3f143e326a2e6ac18e98aff160684083&type=album">
+<img src="https://sun9-44.userapi.com/impg/dNzuKA5e-i7ATCfHaXyF1w9yoCMeGl2XGfB0Ng/iZgpihpS-x4.jpg?size=1834x897&quality=96&sign=0db32b98dd35dfd852b1364c8dc212da&type=album">
